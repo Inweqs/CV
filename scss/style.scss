@@ -1,0 +1,81 @@
+$gap: 15px;
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .wrapper {
+        height: 100%;
+        max-width: 850px;
+        border: 3px solid #000000;
+        padding: 60px 55px;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    h3 {
+        color: rgb(60, 174, 11);
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    margin-bottom: 30px;
+    .line {
+        height: 3px;
+        width: 600px;
+        background: #000000;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+}
+
+main {
+    .skills, .education, .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 35px;
+    }
+    ul {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 10px;
+        li {
+            padding-left: 10px;
+            position: relative;
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            width: 5px;
+            height: 5px;
+            background: #000;
+            border-radius: 50%;
+        }
+    }
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    a {
+        text-decoration: underline;
+    }
+}
